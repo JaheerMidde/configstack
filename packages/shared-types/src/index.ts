@@ -1,5 +1,7 @@
 export type DeviceType = 'PHONE' | 'WATCH' | 'TABLET';
 
+import type { PlanPublicFields } from './plan-sanitize';
+
 export type Selection = {
     variantId?: string;
     planId?: string;
@@ -23,6 +25,15 @@ export type PlanLookup = {
     id: string;
     supportsNumberShare: boolean;
 };
+
+export type { PlanTier, PlanPublicFields } from './plan-sanitize';
+export {
+    SENSITIVE_PLAN_FIELDS,
+    pickPublicPlanFields,
+    assertNoSensitivePlanFields,
+} from './plan-sanitize';
+
+export type CatalogPlan = PlanPublicFields;
 
 export type CatalogProduct = {
     id: string;
