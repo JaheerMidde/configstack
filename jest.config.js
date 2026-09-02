@@ -2,9 +2,9 @@
 module.exports = {
     preset: 'ts-jest',
     testEnvironment: 'node',
-    testMatch: ['<rootDir>/__tests__/**/*.test.ts'],
+    testMatch: ['<rootDir>/packages/shared-validation/src/__tests__/**/*.test.ts'],
     moduleNameMapper: {
-        '^@configstack/shared-type$':
+        '^@configstack/shared-types$':
             '<rootDir>/packages/shared-types/src/index.ts'
     }
 }
