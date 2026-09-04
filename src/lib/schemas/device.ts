@@ -16,4 +16,4 @@ export const deviceContextSchema = z.object({
     stackOrder: z.number().int().nonnegative(),
     selections: selectionSchema,
 });
-export type DeviceContext = z.infer<typeof deviceContextStack>;
+export type DeviceContext = z.infer<typeof deviceContextSchema>;

@@ -22,7 +22,8 @@
     "@configstack/shared-types": "*",
     "@configstack/shared-validation": "*",
     "zod": "^4.5.4",
-    "nanoid": "^6.0.1"
+    "nanoid": "^6.0.1",
+    "@tanstack/react-query": "^5.102.8"
   },
   "devDependencies": {
     "@types/jest": "^30.0.0",
