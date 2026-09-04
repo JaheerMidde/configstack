@@ -19,7 +19,10 @@
     "react": "^18",
     "react-dom": "^18",
     "@configstack/shared-store": "*",
-    "zod": "^4.5.4"
+    "@configstack/shared-types": "*",
+    "@configstack/shared-validation": "*",
+    "zod": "^4.5.4",
+    "nanoid": "^6.0.1"
   },
   "devDependencies": {
     "@types/jest": "^30.0.0",
